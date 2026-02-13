@@ -1,0 +1,13 @@
+fullname = "Dave P. Samson"     
+age = 19                         
+height = 5.7             
+is_working = False              
+  
+
+print("Fullname:", fullname, "| Data Type:", type(fullname), "\n")
+
+print("Age:", age, "| Data Type:", type(age), "\n")
+
+print("Height in meters:", height, "| Data Type:", type(height), "\n")
+
+print("Currently working?:", is_working, "| Data Type:", type(is_working), "\n")
