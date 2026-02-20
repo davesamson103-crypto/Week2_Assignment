@@ -1,0 +1,32 @@
+x = 300
+
+def make_positive(n):
+    if n < 0:
+        return -n
+    return n
+
+def find_closest():
+    print("Find the closest number to", x)
+
+    a = int(input("Enter your first number: "))
+    b = int(input("Enter your second number: "))
+    c = int(input("Enter your third number: "))
+
+    dist_a = make_positive(a - x)
+    dist_b = make_positive(b - x)
+    dist_c = make_positive(c - x)
+
+    # ALL EQUAL CONDITION
+    if dist_a == dist_b and dist_b == dist_c:
+        print(f"A is {a}, B is {b}, and C with the value of {c} are all equal, therefore all numbers are closest to {x}")
+
+    elif dist_a <= dist_b and dist_a <= dist_c:
+        print(f"Letter A or {a} is the closest number to {x}")
+
+    elif dist_b <= dist_a and dist_b <= dist_c:
+        print(f"Letter B or {b} is the closest number to {x}")
+
+    else:
+        print(f"Letter C or {c} is the closest number to {x}")
+
+find_closest()
